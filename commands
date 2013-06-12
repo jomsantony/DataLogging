@@ -1,0 +1,13 @@
+ 1761  tar -xzf pyserial-2.6.tar.gz 
+ 1762  sudo python setup.py insta;;
+ 1763  sudo python setup.py install
+ 1764  cd pyserial-2.6/
+ 1765  sudo python setup.py install
+ 1766  ls /dev/tty.*
+ 1767  python -m serial.tools.list_ports
+ 1768  python -m serial.tools.miniterm ttyACM0
+ 1769  python -m serial.tools.list_ports
+ 1770  python -m serial.tools.miniterm /dev/ttyACM0
+ 1771  python -m serial.tools.miniterm /dev/ttyACM0 >> templogfile
+ 1772  python -m serial.tools.miniterm /dev/ttyACM0 >> templog.csv
+
